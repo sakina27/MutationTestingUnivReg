@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+           http://maven.apache.org/POM/4.0.0
+           http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.university</groupId>
+    <artifactId>course-registration</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+
+        <junit.jupiter.version>5.10.0</junit.jupiter.version>
+        <pitest.version>1.22.0</pitest.version>
+    </properties>
+
+    <dependencies>
+        <!-- JUnit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-junit5-plugin</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- JUnit 5 runner -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*IT.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- PIT mutation testing -->
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>${pitest.version}</version>
+                <configuration>
+                    <!-- Classes that PIT will mutate -->
+                    <targetClasses>
+                        <param>com.example.university.service.*</param>
+                        <param>com.example.university.model.*</param>
+                        <param>com.example.university.repository.*</param>
+                    </targetClasses>
+
+                    <!-- Tests that will be run against mutants -->
+                    <targetTests>
+                        <param>com.example.university.model.*Test</param>
+                        <param>com.example.university.service.*Test</param>
+                        <param>com.example.university.integration.*IT</param>
+                        <param>com.example.university.repository.*Test</param>
+                    </targetTests>
+
+                    <!-- Default mutators (math, conditionals, etc.) -->
+                    <mutators>
+                        <mutator>DEFAULTS</mutator>
+                    </mutators>
+
+                    <!-- Optional thresholds -->
+                    <mutationThreshold>40</mutationThreshold>
+                    <coverageThreshold>70</coverageThreshold>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,15 @@
+com/example/university/repository/CourseRepositoryTest.class
+com/example/university/model/GradeReportTest.class
+com/example/university/repository/GradeReportRepositoryTest.class
+com/example/university/service/PrerequisiteServiceTest.class
+com/example/university/repository/StudentRepositoryTest.class
+com/example/university/AppTest.class
+com/example/university/service/GradeServiceTest.class
+com/example/university/integration/RegistrationServiceIT.class
+com/example/university/service/StudentServiceTest.class
+com/example/university/service/GPAServiceTest.class
+com/example/university/service/TimetableServiceTest.class
+com/example/university/integration/GPAServiceIT.class
+com/example/university/model/StudentTest.class
+com/example/university/model/TimeSlotTest.class
+com/example/university/repository/EnrollmentRepositoryTest.class

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>GradeService.java</h1>
+
+<table class="src">
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.example.university.service;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class GradeService {</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String assignGrade(int marks) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_6'>4</a>
+<span>
+1. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+2. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+3. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+4. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#60; 0 || marks &#62; 100) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Marks out of range&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_9'>3</a>
+<span>
+1. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+2. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+3. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#62;= 90) return &#34;A&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_10'/>
+10
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_10'>3</a>
+<span>
+1. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+2. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+3. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#62;= 80) return &#34;B&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_11'/>
+11
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_11'>3</a>
+<span>
+1. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+2. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+3. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#62;= 70) return &#34;C&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_12'>3</a>
+<span>
+1. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+2. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+3. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#62;= 60) return &#34;D&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_13'>3</a>
+<span>
+1. assignGrade : removed conditional - replaced comparison check with false &rarr; KILLED<br/>
+2. assignGrade : changed conditional boundary &rarr; KILLED<br/>
+3. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (marks &#62;= 50) return &#34;E&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_14'>1</a>
+<span>
+1. assignGrade : replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return &#34;F&#34;;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double gradeToPoints(String grade) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        switch (grade) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_19'>1</a>
+<span>
+1. gradeToPoints : replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            case &#34;A&#34;: return 10.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_20'/>
+20
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_20'>1</a>
+<span>
+1. gradeToPoints : replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            case &#34;B&#34;: return 8.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_21'/>
+21
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_21'>1</a>
+<span>
+1. gradeToPoints : replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            case &#34;C&#34;: return 6.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_22'>1</a>
+<span>
+1. gradeToPoints : replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            case &#34;D&#34;: return 4.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_23'>1</a>
+<span>
+1. gradeToPoints : replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            case &#34;E&#34;: return 2.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            case &#34;F&#34;: return 0.0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            default: throw new IllegalArgumentException(&#34;Unknown grade: &#34; + grade);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2e29f28e_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_invalidMarks_throwException()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_10'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_11'>11</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_11'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> removed conditional - replaced comparison check with false &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>assignGrade<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()]</span></span> replaced return value with &#34;&#34; for com/example/university/service/GradeService::assignGrade &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>gradeToPoints<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()]</span></span> replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_20'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>gradeToPoints<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()]</span></span> replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_21'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>gradeToPoints<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()]</span></span> replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>gradeToPoints<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()]</span></span> replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2e29f28e_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2e29f28e_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>gradeToPoints<br/><b>Killed by : </b>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()]</span></span> replaced double return with 0.0d for com/example/university/service/GradeService::gradeToPoints &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>REMOVE_CONDITIONALS_EQUAL_ELSE</li>
+<li class='mutator'>REMOVE_CONDITIONALS_ORDER_ELSE</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_allBoundariesAndRanges()] (0 ms)</li><li>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:gradeToPoints_allGrades()] (0 ms)</li><li>com.example.university.service.GPAServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GPAServiceTest]/[method:calculateGPA_mixedGrades_weightedByCredits()] (0 ms)</li><li>com.example.university.integration.GPAServiceIT.[engine:junit-jupiter]/[class:com.example.university.integration.GPAServiceIT]/[method:generateGradeReport_correctGpaAndCreditsSaved()] (12 ms)</li><li>com.example.university.service.GradeServiceTest.[engine:junit-jupiter]/[class:com.example.university.service.GradeServiceTest]/[method:assignGrade_invalidMarks_throwException()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.22.0
+
+</body>
+</html>

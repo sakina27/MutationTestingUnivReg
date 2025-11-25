@@ -1,0 +1,15 @@
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/AppTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/integration/GPAServiceIT.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/integration/RegistrationServiceIT.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/model/GradeReportTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/model/StudentTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/model/TimeSlotTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/repository/CourseRepositoryTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/repository/EnrollmentRepositoryTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/repository/GradeReportRepositoryTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/repository/StudentRepositoryTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/service/GPAServiceTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/service/GradeServiceTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/service/PrerequisiteServiceTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/service/StudentServiceTest.java
+/Users/sakina/Documents/course-registration/src/test/java/com/example/university/service/TimetableServiceTest.java
