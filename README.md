@@ -105,7 +105,7 @@ These logs confirm the depth of mutation analysis performed on the system.
 
 ---
 
-## 📄 Full LaTeX Mutation Testing Report
+## Full LaTeX Mutation Testing Report
 
 The complete mutation testing report is available inside the project under: ![Project Report](/SWTProjectReport.pdf)
 
