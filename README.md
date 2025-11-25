@@ -5,7 +5,7 @@ The main objective of this work is to design the system and evaluate its test qu
 
 ---
 
-## 📌 Project Modules
+## Project Modules
 
 - **Model Layer**  
   Student, Course, Enrollment, GradeReport, EnrollmentRequest, TimeSlot, CourseSchedule
@@ -23,9 +23,9 @@ The main objective of this work is to design the system and evaluate its test qu
 
 ---
 
-## 🧪 Testing Performed
+## Testing Performed
 
-### ✅ **Unit Testing**
+### **Unit Testing**
 Unit tests were written for:
 
 - All **model classes** (getters, setters, equals, hashCode, toString)
@@ -37,7 +37,7 @@ Unit tests were written for:
 - All **repositories**
 - Utility classes
 
-### ✅ **Integration Testing**
+### **Integration Testing**
 Integration tests covered complete workflows:
 
 - Successful enrollment  
@@ -50,12 +50,12 @@ Integration tests covered complete workflows:
 
 ---
 
-## 🧬 Mutation Testing (PIT)
+## Mutation Testing (PIT)
 
 Mutation testing was performed for both **unit** and **integration** tests.  
 The goal was to measure the ability of our tests to detect faulty versions of code (mutants).
 
-### 🔥 **Final Mutation Testing Results**
+### **Final Mutation Testing Results**
 - **Total classes mutated:** 18  
 - **Line coverage:** **94%** (356/378)  
 - **Mutation coverage:** **87%** (173/199 mutants killed)  
@@ -64,7 +64,7 @@ The goal was to measure the ability of our tests to detect faulty versions of co
 - **Mutants killed:** 173  
 - **Mutants survived:** 11  
 
-### 🧩 Strongly-Killed Mutators (Examples)
+### Strongly-Killed Mutators (Examples)
 Below are examples of mutation operators that were strongly killed by our tests:
 
 - `CONDITIONALS_BOUNDARY`  
@@ -79,19 +79,42 @@ These indicate that the test suite is effective at catching incorrect logic, wro
 
 ---
 
-## 📊 PIT Console Logs (Important Part of the Report)
+## PIT Console Logs (Important Part of the Report)
 
 Example statistics from PIT run:
 
-![PIT Summary](/build-success.png)
+![Build Logs](/build-success.png)
 
 PIT also lists every mutator used such as:
 
-RemoveConditionalMutator
-ConditionalsBoundaryMutator
-PrimitiveReturnsMutator
-BooleanTrueReturnValsMutator
-MathMutator
-EmptyObjectReturnValsMutator
+![Mutators Statistics](/mutator-stats.png)
 
+These logs confirm the depth of mutation analysis performed on the system.
 
+### PIT HTML Dashboard  
+![PIT-Summary](/pit-summary.png)
+
+### PIT Model Coverage  
+![Model-Coverage](/model-coverage.png)
+
+### PIT Service Coverage  
+![Service-Coverage](/service-coverage.png)
+
+### PIT Repository Coverage
+![Repository-Coverage](/repository-coverage.png)
+
+---
+
+## 📄 Full LaTeX Mutation Testing Report
+
+The complete mutation testing report is available inside the project under: ![Project Report](/SWTProjectReport.pdf)
+
+## References
+
+- https://www.geeksforgeeks.org  
+- https://www.javatpoint.com  
+- https://pitest.org 
+
+## Authors
+- **Sakina Baranwala (MT2024130)**  
+- **Yashraj Singh Chauhan (MT2024170)**
