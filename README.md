@@ -83,7 +83,7 @@ These indicate that the test suite is effective at catching incorrect logic, wro
 
 Example statistics from PIT run:
 
-/build-success.png
+![PIT Summary](/build-success.png)
 
 PIT also lists every mutator used such as:
 
