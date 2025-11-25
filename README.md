@@ -118,3 +118,24 @@ The complete mutation testing report is available inside the project under: ![Pr
 ## Authors
 - **Sakina Baranwala (MT2024130)**  
 - **Yashraj Singh Chauhan (MT2024170)**
+
+## Team Contributions
+### Sakina Baranwala (MT2024130)
+
+Designed and implemented advanced features:
+TimetableService, TimeSlot clash detection, CourseSchedule, and prerequisite depth checking.
+Enhanced enrollment workflow with scheduling & prerequisite logic.
+Focused on integration testing, including end-to-end academic workflows.
+Performed mutation testing on integration-level tests and added tests to kill surviving mutants.
+Wrote major portions of the LaTeX mutation testing report and project documentation.
+
+### Yashraj Singh Chauhan (MT2024170)
+
+Implemented core backend logic for:
+RegistrationService, GradeService, GPAService, and parts of StudentService.
+Developed repository classes and integrated model persistence.
+Focused on unit testing for models, repositories, and service methods.
+Performed mutation testing on unit-level tests and analyzed PIT results.
+Captured PIT logs, screenshots, and contributed to README and final report.
+
+
